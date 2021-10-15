@@ -1,10 +1,11 @@
 <template>
   <div>
+    <h1>Fetch API</h1>
     <div v-if="loading && loading !== 'error'">Loading...</div>
-        <ul v-else>
-            <li v-for="(todo,index) in todos" :key="index">{{ todo.title }}</li>
-        </ul>
-        <div v-if="loading === 'error'">Error</div>
+    <ul v-else>
+      <li v-for="(todo, index) in todos" :key="index">{{ todo.title }}</li>
+    </ul>
+    <div v-if="loading === 'error'">Error</div>
   </div>
 </template>
 
@@ -16,7 +17,7 @@ export default {
       .then((json) => {
         this.todos = json;
         this.loading = false;
-      })
+      });
     //   .catch((error) => (this.loading = "error"));
   },
 

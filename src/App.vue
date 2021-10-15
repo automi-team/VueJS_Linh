@@ -8,7 +8,6 @@
     <FilterExemple /> <hr>
     <VuexExemple /> <hr>
     <VueRouter /> <hr>
-    <h1> Fetch API </h1>
     <FetchAPI />
   </div>
 </template>
