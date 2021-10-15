@@ -1,24 +1,10 @@
-# learnvue2
+#Learn VueJS
 
-## Project setup
-```
-npm install
-```
+- Compile the project
+    $ npm run serve
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- Build the project
+    $ npm run build
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Lints and fixes files 
+    $ npm run lint

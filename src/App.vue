@@ -1,19 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1> Summary </h1>
+    <exemple-1 /> <hr>
+    <ButtonShow /> <hr>
+    <TodoList :sendTask="sendData" /> <hr>
+    <TagSelector /> <hr>
+    <FilterExemple /> <hr>
+    <VuexExemple /> <hr>
+    <VueRouter /> <hr>
+    <h1> Fetch API </h1>
+    <FetchAPI />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import Test from './components/Test';
+import ButtonShow from "./components/ButtonShow.vue";
+import Exemple1 from "./components/Exemple1.vue";
+import FetchAPI from './components/FetchAPI.vue';
+import FilterExemple from './components/FilterExemple.vue';
+import TagSelector from './components/TagSelector.vue';
+import TodoList from "./components/TodoList.vue";
+import VueRouter from './components/VueRouter.vue';
+import VuexExemple from './components/VuexExemple.vue';
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    //shortcut for Menu: Menu
+    ButtonShow,
+    Exemple1,
+    TodoList,
+    TagSelector,
+    FilterExemple,
+    VuexExemple,
+    VueRouter,
+    FetchAPI,
+  },
+  data() {
+    return{
+      sendData: {content: "Data from parent sent to child", send: true},
+    }
   }
-}
+};
 </script>
 
 <style>
